@@ -6,6 +6,7 @@ We will look at the code to see how well it is structured, how easy it is to rea
 We expect that you'll be able to motivate and discuss the benefits and drawbacks of the choices in your solution.
 We understand that there isn't a lot of time for implementation, and we keep that in mind. We expect that the code will have both strong and weak areas, and we'll be looking to bring those up when we meet to discuss your solution.
 Please list what you left out. For example things that you would have spent more time on if you had more time, and what things you did not spend time on at all.
+
 # Assignment
 Create a tiny API that uses some web framework in Node.js to expose an http endpoint that takes an rss url, parses it and returns a list of episodes from that rss feed. Should be REST (-ish). Any parse errors that are returned by the parsing module should propagate in a nice way to the client. Also, for each episode, fetch and include in the result a checksum of the MP3 file for the episode. The resulting json should look something like this:
 ```

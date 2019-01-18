@@ -5,6 +5,8 @@
 Acast is growing fast and we are hiring a lot of new people. Being part of the development team, we need your help to review a code assignment from a potential candidate.
 The code works in practice, but the solution is questionable and there are many issues and inconsistencies.
 
+The API will be used by Acast to probe all external content. It is expected to be for limited internal use only in the beginning, but will need to grow as it will be exposed for integration with several publishers going forward.
+
 Prepare some notes for a code review together with your team.
 
 ## Interview and assessment
