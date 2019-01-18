@@ -2,6 +2,8 @@ const express = require('express');
 const superagent = require('superagent');
 const checksum = require('checksum');
 const fs = require('fs');
+const nodeID3 = require('node-id3')
+const filenamify = require('filenamify');
 let Parser = require('rss-parser');
 let parser = new Parser();
 
@@ -44,8 +46,24 @@ const createApp = () => {
     
   });
   
-  app.get('/info', (req, res) => {
-    res.send('Ok');
+  app.get('/id3', (req, res) => {
+    const url = req.query.url;
+    const fileName = filenamify(url, {replacement: '_'});
+    
+    const stream = fs.createWriteStream('./files/' + fileName)
+
+    stream.on('finish', function() {
+      const tags = nodeID3.read('./files/' + fileName);
+      delete tags.raw;
+      res.send(tags)
+    })
+
+    stream.on("error", (err) => {
+      console.log("error in request", err)
+      throw err;
+    })
+
+    superagent.get(url).pipe(stream);
   });
   
   applyMiddlewares(app)
