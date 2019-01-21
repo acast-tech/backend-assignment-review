@@ -19,4 +19,4 @@ If you have any doubts or questions, feel free to bring them up at any time befo
 ## Provided materials
 
 - The specifiction for the task [can be found here](https://github.com/acastSthlm/backend-assignment-review/blob/master/README_ASSIGNMENT.md).
-- The PR submitted by the candidate [can be found here](https://github.com/acastSthlm/backend-assignment-review/pull/1).
+- The PR submitted [can be found here](https://github.com/acastSthlm/backend-assignment-review/pull/1).
