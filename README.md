@@ -10,7 +10,7 @@ Prepare some notes for a code review together with your team.
 
 ## Interview and assessment
 
-During the interview, we want to hear your thoughts about the candidate's code. Treat it as if you were reviewing code submitted by a team member or colleague.
+During the interview, we want to hear your thoughts about the code. Treat it as if you were reviewing code submitted by a team member or colleague.
 
 Our goal with this task is to create a discussion around the submitted code. We are not trying to trick you or expect you to find any particular issue.
 
@@ -18,5 +18,5 @@ If you have any doubts or questions, feel free to bring them up at any time befo
 
 ## Provided materials
 
-- The readme for the candidate's assignment [can be found here](https://github.com/acastSthlm/backend-assignment-review/blob/master/README_ASSIGNMENT.md).
+- The specifiction for the task [can be found here](https://github.com/acastSthlm/backend-assignment-review/blob/master/README_ASSIGNMENT.md).
 - The PR submitted by the candidate [can be found here](https://github.com/acastSthlm/backend-assignment-review/pull/1).
